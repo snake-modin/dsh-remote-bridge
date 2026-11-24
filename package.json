@@ -1,0 +1,24 @@
+{
+  "name": "dsh-remote-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Embed remote DSH servers inside the local DeepSeek Harness window over SSH, with tokenless cookie injection and an auto-hiding control dock.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "engines": {
+    "dsh": ">=0.1.5"
+  }
+}

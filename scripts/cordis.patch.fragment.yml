@@ -1,0 +1,15 @@
+# --- dsh-remote-bridge: 在本地 DSH 窗口内嵌显示远端服务器上的 DSH ---------
+# 宿主端为每台主机维持 SSH 隧道 + 本地反向代理（cookie 注入、Host/Origin 改写），
+# 必要时在远端 tmux 里自动拉起 dsh web；侧栏底部「远程」按钮点开即在窗口内显示
+# 远端 DSH 界面（在远端执行、消耗远端 token）。主机可在界面「配置」里增删。
+- insert:
+    - id: remote-bridge
+      name: "dsh-remote-bridge"
+      config:
+        hosts:
+          - alias: XZY
+            label: "XZY (zongyao)"
+            port: 3080
+          - alias: "2903"
+            label: "2903 (taoyuanhang)"
+            port: 3080

@@ -1,0 +1,11 @@
+# Build/runtime artifacts are not committed
+node_modules/
+dist/
+*.zip
+*.log
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

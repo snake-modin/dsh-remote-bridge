@@ -2,6 +2,16 @@
 
 在本地 DSH 窗口里直接使用**远端服务器上的 DSH**：同一个窗口切换多台服务器，agent 在远端执行、消耗远端 token，界面仍是远端原生的 DSH（不重写、不换风格）。
 
+## 界面展示
+
+侧栏底部的「远程」入口（红框处）：
+
+<img src="docs/screenshots/sidebar-entry.png" alt="侧栏入口" width="260" />
+
+在窗口内使用远端 DSH，底部悬浮条可切换服务器 / 查看状态 / 配置 / 重连 / 关闭：
+
+![窗口内使用远端 DSH](docs/screenshots/remote-view.png)
+
 ## 功能
 
 - **窗口内嵌入**：侧栏底部「远程」→ 全窗口显示远端 DSH 界面
